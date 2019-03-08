@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.html{
+    scroll-behavior: smooth;
+}
+.poiret{
+    font-family: 'Raleway', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #fd7e14;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.above{
+    color: #fff;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 5%;
+    height: 25px;
+    width: 84vw; 
+    clip-path: polygon(1.8% 0, 100% 0, 100% 100%, 1% 100%);
+}
+.under{
+    top: 93%;
+    background: #fff;
+    position: absolute;
+    color: #fff;
+    width: 100%; 
+}
+.navbar{
+    width: 100%; 
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 1.2em;
+}
+
+#backGround{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 1% 100%);
+}
+
+.box1{
+    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+}
+/* .box4{
+    width: 100%;
+    background-image: url('images/reuse.jpg');
+}
+.box5{
+    width: 100%;
+    background-image: url('images/product.jpg');
+}
+.box6{
+    width: 100%;
+    background-image: url('images/recycle.jpg');
+} */
+
+.angle-left,
+.angle-right{
+	align-self: center;
+}
+.angle-left>a,
+.angle-right>a{
+	color: #007bff;
+	font-size: 2.5em;
+}
+/* BLOG AVATAR */
+#userIcon{
+    position: absolute;
+    width: 140px; 
+    height: 140px; 
+    top: 43%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.r_1,.r_2,.r_3,.e_1,.e_2,.e_3{
+    color: #ddd;
+	animation: textAnima;
+    animation-duration: 3.9s;
+    animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes textAnima {
+	0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25%{
+        color: rgba(206, 170, 240, 0.5);
+        opacity: 0.5;
+    }
+	50%{
+        transform: rotate(20deg);
+        /* opacity: 1; */
+    }
+    75%{
+        color: rgb(172, 223, 172);
+        opacity: 0.5;
+    }
+	100%{
+        opacity: 0.75;
+		color: rgb(245, 225, 112);
+	}
+}  
+
+#textCol p a{
+    color: #fff;
+}
+
+/* For Sticky Navbar */ 
+.sticky {
+	z-index: 1;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    border-top: 2px solid #007bff;
+    background: #fff;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
