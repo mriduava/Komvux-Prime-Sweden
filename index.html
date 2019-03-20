@@ -69,17 +69,17 @@
                 </form>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-warning href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       CATEGORIES
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Flowers</a>
-                      <a class="dropdown-item" href="#">Science</a>
-                      <a class="dropdown-item" href="#">Toys</a>
-                      <a class="dropdown-item" href="#">Landscape</a>
-                      <a class="dropdown-item" href="#">Decoration</a>
+                      <a id="flowers" class="dropdown-item" href="#">Flowers</a>
+                      <a id="science" class="dropdown-item" href="#">Science</a>
+                      <a id="landscape" class="dropdown-item" href="#">Landscape</a>
+                      <a id="nature" class="dropdown-item" href="#">Nature</a>
+                      <a id="toys" class="dropdown-item" href="#">Toys</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Undefiend</a>
+                        <a id="undefined" class="dropdown-item" href="#">Undefiend</a>
                     </div>
                   </li>
 
@@ -87,8 +87,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-warning"href="type="button" class="btn btn-primary" data-toggle="modal" data-target="#cartModal"><i class="fas fa-cart-plus"></i><span class="itemsnum px-2 bg-danger text-white" style="border-radius: 50%;">0</span></a>
                 </li>
-
-
                 <li class="nav-item">
                     <a class="nav-link text-warning"href="type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinModal">SIGN IN</a>
                 </li>
@@ -107,6 +105,7 @@
           </button>
         </div>
         <div id="cart" class="modal-body">
+          <!-- Cart Array List -->
 
         </div>
         <hr>
@@ -155,12 +154,12 @@
 
   <section>
     <div id="backGround" style="background: url('images/blog_bg.jpg') center top; background-size: cover;">
-      <div class="container d-flex flex-row" style="min-height: 77vh">
+      <div class="container d-flex flex-row" style="min-height: 20vh">
    
-        <div class="row mx-1 pl-xm-5 d-flex mt-5">
+        <div class="row mx-1 pl-xm-5 d-flex mt-1">
         
-          <div id="animaText" class="col-lg-12 text-sm-left ml-sm-2 my-5 d-flex flex-wrap ml-3">
-            <h3 class="display-4 text-primary"><span class="r_1">P</span>
+          <div id="animaText" class="col-12 text-sm-left ml-sm-2 my-5 d-flex flex-wrap ml-3 justify-content-center">
+            <h3 class="display-4 text-warning"><span class="r_1">P</span>
               <span class="e_1">H</span>
               <span class="u_1">O</span>
               <span class="s_1">T</span>
@@ -181,13 +180,13 @@
   <section>
     <div class="container-fluid">
       <div class="row text">
-        <div class="col-4 w-100 box1 bg-warning" style="height: 40px; border-top: 2px solid #ddd;"> 
+        <div class="col-4 w-100 box1 bg-warning" style="height: 10px; border-top: 2px solid #ddd;"> 
             <h4 class="text-center text-light display-sm-4"></h4>
         </div>
-        <div class="col-4 w-100 box2 bg-warning" style="height: 40px; border-top: 2px solid #ddd;">
+        <div class="col-4 w-100 box2 bg-warning" style="height: 10px; border-top: 2px solid #ddd;">
             <h4 class="text-center text-light display-sm-4"></h4>
         </div>
-        <div class="col-4 w-100 box3 bg-warning" style="height: 40px; border-top: 2px solid #ddd;">
+        <div class="col-4 w-100 box3 bg-warning" style="height: 10px; border-top: 2px solid #ddd;">
             <h4 class="text-center text-light display-sm-4"></h4>
         </div>
       </div>
@@ -203,11 +202,14 @@
                 <h4 class="text-center display-4 text-secondary">PRODUCTS</h4>
                                   <!-- TO SORT -->
            
-              <h5>SORT BY PRICE</h5>
+              <h5 class="text-center mx-auto">SORT BY PRICE</h5>
+            <div class="d-flex justify-content-center">
               <select id="sortitems">
-                <option value="1">High Price</option>
-                <option value="2">Low Price</option>
+                <option value="unsort">Unsorted</option>
+                <option value="low">Low Price</option>
+                <option value="high">High Price</option>
             </select>
+            </div>
             </div>
 
           </div>
@@ -220,189 +222,8 @@
          </div>
        </div>
       </section>
-
-
-
-  <section>
-      <div class="container-fluid mt-0">
-        <div class="row">
-          <div class="col-12 w-100 my-5">
-              <h4 class="text-center display-4 text-secondary">INFO</h4>
-          </div>
-        </div>
-      </div>
-    <div class="container-fluid">
-      <div class="row" style="border-bottom: 2px solid #007bff;">
-          <div class="col-lg-6 col-md-6 w-100 p-3 box6" style="background-color: rgba(253, 229, 7, 0.3); height: 400px; border-top: 2px solid #ddd;">
-              <!-- <h4 class="text-cnter">RECYCLE</h4> -->
-           </div>
-           <div class="col-lg-6 col-md-6 w-100 p-5 box9" style="background-color: rgba(83, 247, 18, 0.336); height: 400px; border-top: 2px solid #ddd;">
-              <h4 class="text-cnter text-success">PHOTOGRAPHY</h4>
-              <p class="text-justify text-secondary">ecycling is important in today’s world if we want
-                 to leave this planet for our future generations. It is good for the environment, since 
-                 we are making new products from the old products which are of no use to us. Recycling 
-                 begins at home. If you are not throwing away any of your old product and instead utilizing 
-              </p>
-              <a class="btn btn-sm btn-outline-success m-0" style="position: relative; display: inline;" href="#" role="button">Read more</a>
-           </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FROM BLOG -->
-  <section>
-    <div class="container-fluid mt-0">
-      <div class="row">
-        <div class="col-12 w-100 my-5">
-            <h4 class="text-center display-4 text-secondary">BLOG POSTS</h4>
-        </div>
-      </div>
-    </div>
-
-  <div class="container">
-  <div class="row">
-
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-      <div class="card">
-        <div class="bg-img">
-            <img class="card-img-top" style="height: 300px;" src="images/climate_1.jpg">
-             <div class="pb-5">
-             <img id="userIcon" class="rounded-circle img-fluid" src="images/baby.jpg">
-          </div>
-          </div>
-        <div class="card-body">
-              <h4 class="font-weight-bold text-center text-info py-2">Xing Xing</h4>
-          <hr>
-          <h5>Global warming</h5>
-          <p class="dark-grey-text mt-4">
-              Since 1971, 90% of the warming has occurred in the oceans.Despite the oceans' dominant 
-              role in energy storage, the term "global warming" is also used to refer to increases 
-              in average temperature of the air and sea at earth's surface.
-          </p>
-          <input type="btn" class="btn btn-sm btn-outline-primary ml-0" style="position: relative; display: inline;" value="Read more">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-        <div class="card">
-          <div class="bg-img">
-              <img class="card-img-top" style="height: 300px;" src="images/climate_3.jpg">
-               <div class="pb-5">
-               <img id="userIcon" class="rounded-circle img-fluid" src="images/baby2.jpg">
-            </div>
-            </div>
-          <div class="card-body">
-                <h4 class="font-weight-bold text-center text-info py-2">Tomas Brage</h4>
-            <hr>
-            <h5 class="text-secondary">Climate Chnage</h5>
-            <p class="dark-grey-text mt-4">
-                Since 1971, 90% of the warming has occurred in the oceans.Despite the oceans' dominant 
-                role in energy storage, the term "global warming" is also used to refer to increases 
-                in average temperature of the air and sea at earth's surface.
-            </p>
-            <input type="btn" class="btn btn-sm btn-outline-primary ml-0" style="position: relative; display: inline;" value="Read more">
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-          <div class="card">
-            <div class="bg-img">
-                <img class="card-img-top w-100" style="height: 300px;" src="images/climate_2.jpg">
-                 <div class="pb-5">
-                 <img id="userIcon" class="rounded-circle img-fluid" src="images/baby3.jpg">
-              </div>
-              </div>
-            <div class="card-body">
-                  <h4 class="font-weight-bold text-center text-info py-2">Nela Ivica</h4>
-              <hr>
-              <h5>Ice Melting</h5>
-              <p class="dark-grey-text mt-4">
-                  Since 1971, 90% of the warming has occurred in the oceans.Despite the oceans' dominant 
-                  role in energy storage, the term "global warming" is also used to refer to increases 
-                  in average temperature of the air and sea at earth's surface.
-              </p>
-              <input type="btn" class="btn btn-sm btn-outline-primary ml-0" style="position: relative; display: inline;" value="Read more">
-            </div>
-          </div>
-        </div>
-  </div>
-</div>
-  </section>
-    
-  <!-- CONTACT FORM -->
-    <section id="aboutUs">
-      <div class="container-fluid my-5 p-0">
-        <div class="row w-100 m-0">
-          <div class="col-lg-8 w-100 box10 pt-5">  
-              <img class="w-100" src="images/relax.jpg">
-          </div>
-          <div class="col-lg-4 w-100 box2 pt-5 text-primary">
-              <h4 class="text-center display-sm-4 pb-3">CONTACT US</h4>
-             
-              <div class="form-group">
-                  <label for="name"><i class="fas fa-user prefix"></i> Name</label> 
-                  <input type="text" id="name" class="form-control">
-              </div>
-              <div class="form-group">
-                  <label for="name"><i class="fas fa-at prefix"></i> Email</label> 
-                  <input type="email" id="email" class="form-control">
-              </div>
-              <div class="form-group">
-                  <label for="message"><i class="fas fa-pen-nib prefix"></i> Message</label> 
-                  <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-              </div>
-              <div class="form-group pt-3">
-                  <input type="btn" class="btn btn-outline-primary btn-block ml-0" style="position: relative; display: inline;" value="SEND MESSAGE">
-              </div>
-         
-          </div>
-        </div>
-      </div>
-    </section>
-
-<footer>
-  <div class="container-fluid text-light" style="background: rgba(231, 176, 24, 0.5)">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left mt-3 pb-3">
-         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">PHOTOGRAPHY</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptates at 
-            maiores beatae nisi? Omnis distinctio aspernatur nihil ipsum ad magni pariatur 
-            voluptas earum dolor quaerat tempore a </p>
-        </div>
-        <hr class="w-100 clearfix d-md-none">
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-          <p><i class="fas fa-home mr-3"></i> Komvux, Helsingborg</p>
-          <p><i class="fas fa-envelope mr-3"></i> info@helsingborg.se</p>
-          <p><i class="fas fa-phone mr-3"></i> 46 805 575 39</p>
-          <p><i class="fas fa-print mr-3"></i> 46 805 567 39</p>
-        </div>
-        <hr class="w-100 clearfix d-md-none">
-        <div id="textCol" class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">USEFUL PAGES</h6>
-          <p><a href="#!">BLOG</a></p>
-          <p><a href="#!">GALLERY</a></p>
-          <p><a href="#!">ABOUT US</a></p>
-          <p><a href="#!">CONTACT US</a></p>
-        </div>
-          <hr class="w-100 clearfix d-md-none">
-        <div id="textCol" class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">GO TO</h6>
-          <p><a href="#!">SIGN IN</a></p>
-          <p><a href="#!">SIGN UP</a></p>
-          <p><a href="#!">PRIVACY POLICY</a></p>
-          <p><a href="#!">Help</a></p>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
       
-
+  <footer>
   <div class="container-fluid bg-warning py-2">
       <div class="container text-center text-md-left">
       <div class="row d-flex align-items-center">

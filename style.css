@@ -24,8 +24,7 @@
     margin-top: 0;
     padding-left: 5%;
     height: 25px;
-    width: 84vw; 
-    clip-path: polygon(1.8% 0, 100% 0, 100% 100%, 1% 100%);
+    width: 100vw; 
 }
 .under{
     top: 93%;
@@ -41,46 +40,7 @@
     font-size: 1.2em;
 }
 
-#backGround{
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 1% 100%);
-}
-
-.box1{
-    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
-}
-/* .box4{
-    width: 100%;
-    background-image: url('images/reuse.jpg');
-}
-.box5{
-    width: 100%;
-    background-image: url('images/product.jpg');
-}
-.box6{
-    width: 100%;
-    background-image: url('images/recycle.jpg');
-} */
-
-.angle-left,
-.angle-right{
-	align-self: center;
-}
-.angle-left>a,
-.angle-right>a{
-	color: #007bff;
-	font-size: 2.5em;
-}
-/* BLOG AVATAR */
-#userIcon{
-    position: absolute;
-    width: 140px; 
-    height: 140px; 
-    top: 43%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
-.r_1,.r_2,.r_3,.e_1,.e_2,.e_3{
+.r_1,.r_2,.r_3,.e_1,.e_2,.e_3,.c_3{
     color: #ddd;
 	animation: textAnima;
     animation-duration: 3.9s;
@@ -92,29 +52,34 @@
 
 @keyframes textAnima {
 	0%{
-        transform: translateY(0);
+        color: rgba(233, 34, 34, 0.774);
         opacity: 0;
     }
     25%{
-        color: rgba(206, 170, 240, 0.5);
+        color: rgba(233, 29, 182, 0.904);
         opacity: 0.5;
     }
 	50%{
-        transform: rotate(20deg);
-        /* opacity: 1; */
+        color: rgba(27, 160, 236, 0.911);
+        opacity: 1;
     }
     75%{
-        color: rgb(172, 223, 172);
+        color: rgb(72, 248, 2);
         opacity: 0.5;
     }
 	100%{
         opacity: 0.75;
-		color: rgb(245, 225, 112);
+		color: rgb(243, 209, 17);
 	}
 }  
 
 #textCol p a{
     color: #fff;
+}
+
+#cart .nlist:nth-child(odd) {
+    background-color: rgba(229, 233, 31, 0.175);
+ 
 }
 
 /* For Sticky Navbar */ 
@@ -123,7 +88,7 @@
 	position: fixed;
     top: 0;
     width: 100%;
-    border-top: 2px solid #007bff;
+    border-top: 2px solid #ffd900;
     background: #fff;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
